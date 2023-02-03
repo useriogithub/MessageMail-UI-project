@@ -1,0 +1,167 @@
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-branding {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  transition: 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+button {
+  background-color: #40ADFF;
+  border-radius: 5px;
+  font-weight: 800px;
+  border: none;
+  width: 150px;
+  font-family: "Nunito", sans-serif;
+  height: 40px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+  background-color: rgb(55, 67, 203);
+}
+
+/*Hamburger menu*/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(31, 13, 194);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
+header {
+  display: flex;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.hero {
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+.hero h1 {
+  font-weight: bold;
+  font-size: 40px;
+}
+.hero h2 {
+  font-size: 16px;
+  font-weight: 800;
+}
+.hero button {
+  background-color: #FFB442;
+  border: none;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-weight: 600;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+section {
+  margin: 0 auto;
+  display: flex;
+  background-color: #C8D8F0;
+  margin-top: 150px;
+  padding: 2em 4em;
+}
+section .promo1 img {
+  width: 150px;
+}/*# sourceMappingURL=main.css.map */
